@@ -19,7 +19,7 @@ class ServiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testXPCService() {
         let textExpectation = expectation(description: "Recieve a string in upper case")
         
         let service = Service()

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9E584F42555A8BC0084C71D /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E584F22555A8BC0084C71D /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9E585092555A8DB0084C71D /* TextAgent.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = E9E584FE2555A8DB0084C71D /* TextAgent.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9E585102555A92D0084C71D /* TextAgentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5850F2555A92D0084C71D /* TextAgentProtocol.swift */; };
 		E9E585122555A9860084C71D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E585112555A9860084C71D /* Service.swift */; };
@@ -51,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		E9E584EF2555A8BC0084C71D /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9E584F22555A8BC0084C71D /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		E9E584F32555A8BC0084C71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E584FE2555A8DB0084C71D /* TextAgent.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TextAgent.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E585062555A8DB0084C71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +60,7 @@
 		E9E5851B2555AA630084C71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E585222555ABB90084C71D /* TextAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAgent.swift; sourceTree = "<group>"; };
 		E9E585252555AC2B0084C71D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E9E585272555B01C0084C71D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +92,7 @@
 		E9E584E52555A8BC0084C71D = {
 			isa = PBXGroup;
 			children = (
+				E9E585272555B01C0084C71D /* README.md */,
 				E9E5850E2555A8E10084C71D /* Protocols */,
 				E9E584F12555A8BC0084C71D /* Service */,
 				E9E584FF2555A8DB0084C71D /* TextAgent */,
@@ -114,7 +114,6 @@
 		E9E584F12555A8BC0084C71D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E9E584F22555A8BC0084C71D /* Service.h */,
 				E9E584F32555A8BC0084C71D /* Info.plist */,
 				E9E585112555A9860084C71D /* Service.swift */,
 			);
@@ -155,7 +154,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E584F42555A8BC0084C71D /* Service.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dk.codepod.Service;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -499,6 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dk.codepod.Service;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -520,6 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dk.codepod.TextAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -542,6 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dk.codepod.TextAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
